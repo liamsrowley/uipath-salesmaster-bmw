@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Firefox: S-Gate Dashboard",
+  "Description": "The main S-Gate dashboard that you land on after authentication.",
+  "Type": "Screen",
+  "Id": "--LUlv_9REmETb0xdieFJw",
+  "Reference": "CLaili1VZUqs4TJjknIpbg/--LUlv_9REmETb0xdieFJw",
+  "ParentRef": "CLaili1VZUqs4TJjknIpbg/oXre5qXVnkS8V5mpzk_UNg",
+  "Created": "2024-01-14T11:49:59.4592194Z",
+  "Updated": "2024-01-14T11:49:59.4592194Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

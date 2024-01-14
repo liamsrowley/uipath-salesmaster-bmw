@@ -1,0 +1,12 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\SGate_SignIn_mock.xaml",
+      "sourceWorkflowPath": "SGate_SignIn.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\SGate_SignIn_mock_1.xaml",
+      "sourceWorkflowPath": "SGate_SignIn.xaml"
+    }
+  ]
+}

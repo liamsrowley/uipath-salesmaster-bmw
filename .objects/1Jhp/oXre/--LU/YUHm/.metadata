@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Application Search Label",
+  "Description": "This label is visible when the dashboard has loaded and is used to to verify that authentication was successful.",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "YUHm-sye4kycdATGx8garg",
+  "Reference": "CLaili1VZUqs4TJjknIpbg/YUHm-sye4kycdATGx8garg",
+  "ParentRef": "CLaili1VZUqs4TJjknIpbg/--LUlv_9REmETb0xdieFJw",
+  "Created": "2024-01-14T11:49:59.5087773Z",
+  "Updated": "2024-01-14T11:49:59.5087773Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

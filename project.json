@@ -43,7 +43,29 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3a73ddc9-bc9f-4e6f-81c4-07215aa34528",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\SGate_SignIn\\TC_SGate_SignIn_Success.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bcc4c355-24cb-437f-9d0f-bb1baf5a57d5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\SGate_SignIn\\TC_SGate_SignIn_InvalidCredentials.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cec1a412-af46-4ee7-822b-2235d09bc65b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\SGate_SignIn\\TC_SGate_SignIn_UnknownError.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
