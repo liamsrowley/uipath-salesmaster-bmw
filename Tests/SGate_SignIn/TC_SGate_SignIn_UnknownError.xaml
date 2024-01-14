@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC_SGate_SignIn_UnknownError" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1002.6666666666665" sap2010:WorkflowViewState.IdRef="TC_SGate_SignIn_UnknownError_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC_SGate_SignIn_UnknownError" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1328.6666666666667" sap2010:WorkflowViewState.IdRef="TC_SGate_SignIn_UnknownError_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -30,15 +30,24 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.Testing.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -47,40 +56,39 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TC_SGate_SignIn_UnknownError" sap:VirtualizedContainerService.HintSize="598,938" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TC_SGate_SignIn_UnknownError" sap:VirtualizedContainerService.HintSize="608,1264" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:Exception" Name="CaughtException" />
     </Sequence.Variables>
@@ -89,20 +97,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="536,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="546,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Sequence>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="536,440" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="546,306" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="474,329.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,195.33333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Mocks\SGate_SignIn_mock_1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Mocks\SGate_SignIn_mock_1.xaml">
             <ui:InvokeWorkflowFile.Arguments>
@@ -111,10 +119,10 @@
           </ui:InvokeWorkflowFile>
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,156" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -135,13 +143,33 @@
         </TryCatch.Catches>
       </TryCatch>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="536,202.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="546,662.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[TypeOf CaughtException Is Exception]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[TypeOf CaughtException Is Exception]" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Firefox: S-Gate Sign In" sap:VirtualizedContainerService.HintSize="484,420" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="5641d5f6-16d1-4ee4-80ad-f2b532aca184" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,200.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,84.66666666666667" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Firefox" ContentHash="8U4eD-bZrEyBhIAfnLn9Og" IconBase64="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" InformativeScreenshot="8056827fab9cf00b856c52991062a80b.png" Reference="CLaili1VZUqs4TJjknIpbg/F3SzmeTdUkWfUSuRxW6uCw" Selector="&lt;html app='firefox.exe' title='WEB-EAM Next' /&gt;" Title="WEB-EAM Next" Url="https://auth.bmwgroup.com/auth/XUI/?realm=%2Finternetb2x&amp;goto=https%3A%2F%2Fauth.bmwgroup.com%3A443%2Fauth%2Foauth2%2Frealms%2Froot%2Frealms%2Finternetb2x%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Daf548bdc-f64c-4bae-89c6-d001ae15ca03%26scope%3Dopenid%2520profile%2520email%2520phone%2520bmwids%2520organization%2520b2xroles%2520b2d%26redirect_uri%3Dhttps%253A%252F%252Fsgate.bmwgroup.com%252Fweb%252Foidc-callback%26state%3Daca59779-180e-4eb9-9dc2-0e927b959c1d#login/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
     </Sequence>
   </Sequence>
 </Activity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s9of1b23Ikav3Mg_Vfj8Wg" Reference="CLaili1VZUqs4TJjknIpbg/5yxi7h8-akOow0d7cvy6jw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://sgate.bmwgroup.com/web/market_gb/home" CvTextArea="1426, 264, 123, 21" CvTextArgument="Administration" CvType="Text" DesignTimeRectangle="1393, 261, 195, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='A' /&gt;&quot;, in_NavItem)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='A' type='' class='' check:innerText='{0}' /&gt;&quot;, in_NavItem)]" Guid="22025594-1e73-4d88-8a38-842f68800385" ScopeSelectorArgument="&lt;html app='firefox.exe' title='S-Gate Retailer Portal United Kingdom and Ireland' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5cb3a6eca201faa1da00248e08305afd.png" xmlns="">0i7RchAYbdUCPKyMa04R7OQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="Administration" Name="in_NavItem" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

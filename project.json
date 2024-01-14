@@ -5,10 +5,10 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.0-preview]",
-    "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.Mail.Activities": "[1.22.0-preview]",
     "UiPath.System.Activities": "[23.12.0-preview]",
     "UiPath.Testing.Activities": "[23.12.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.10.8]"
+    "UiPath.UIAutomation.Activities": "[23.12.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -64,6 +64,21 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\SGate_SignIn\\TC_SGate_SignIn_UnknownError.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3bc24238-4437-4367-80f9-019726bfe668",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TC_SGate_SignOut.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a7d4a356-c0d3-469b-ada4-0eed4cd61044",
+        "dataVariationFilePath": ".variations\\SGate_NavigateMenu.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TC_SGate_NavigateMenu.xaml"
       }
     ],
     "saveToCloud": false

@@ -4,8 +4,11 @@
   "Id": "1Jhp4cFs40K9SSTOnU7yUA",
   "Reference": "CLaili1VZUqs4TJjknIpbg/1Jhp4cFs40K9SSTOnU7yUA",
   "Created": "2024-01-14T11:49:59.211963Z",
-  "Updated": "2024-01-14T11:49:59.211963Z",
+  "Updated": "2024-01-14T18:21:01.9590244Z",
   "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

@@ -1,0 +1,197 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC_SGate_SignOut" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1569.3333333333333" sap2010:WorkflowViewState.IdRef="TC_SGate_SignOut_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TC_SGate_SignOut" sap:VirtualizedContainerService.HintSize="658,1504.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="596,226" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SGate_SignIn.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SGate_SignIn.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="596,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SGate_SignOut.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SGate_SignOut.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="596,862" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,291.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyControlAttribute.ActivityToTest>
+          <ActivityAction>
+            <uix:NCheckState DisplayName="Check App State 'Signed Out Message'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,181.33333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+              <uix:NCheckState.Exists>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <VariableReference x:TypeArguments="x:Boolean">
+                    <VariableReference.Variable>
+                      <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID0" Name="_autogenerated_Exists" />
+                    </VariableReference.Variable>
+                  </VariableReference>
+                </OutArgument>
+              </uix:NCheckState.Exists>
+              <uix:NCheckState.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <VariableReference x:TypeArguments="ui:UiElement">
+                    <VariableReference.Variable>
+                      <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                    </VariableReference.Variable>
+                  </VariableReference>
+                </OutArgument>
+              </uix:NCheckState.OutUiElement>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://sgate.bmwgroup.com/logout.html?state=361fab21-e408-40a8-b735-7a273d717308" ContentHash="PBL2Mwym606ZXk80Kjjkpw" CvTextArea="840, 589, 1217, 22" CvType="AnyWordGroup" DesignTimeRectangle="737, 588, 1428, 28" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='txt-logout' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txt-logout' tag='P' type='' class='' /&gt;" Guid="b9397977-654b-490a-b966-1d91afd7c7f4" InformativeScreenshot="0e26e503060721ee250871f2e2573c6e.png" Reference="CLaili1VZUqs4TJjknIpbg/rGEDoU_T-keWiDJ24qckvQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='S-Gate Logout' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </ActivityAction>
+        </uta:VerifyControlAttribute.ActivityToTest>
+        <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+          <ActivityFunc x:TypeArguments="x:Object">
+            <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+              <uta:ArgumentsBridge.Input>
+                <InArgument x:TypeArguments="x:Object">
+                  <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                </InArgument>
+              </uta:ArgumentsBridge.Input>
+            </uta:ArgumentsBridge>
+          </ActivityFunc>
+        </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+        <uta:VerifyControlAttribute.Expression>
+          <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+        </uta:VerifyControlAttribute.Expression>
+      </uta:VerifyControlAttribute>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Firefox: S-Gate Logout" sap:VirtualizedContainerService.HintSize="534,420" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="e6a516df-9f3c-4c21-afa1-6c6fe161bb64" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,200.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,84.66666666666667" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Firefox" ContentHash="8DmSacuErkKa7zQp6xK8BA" IconBase64="AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAL8BAAC/AQAAAAAAAAAAAAD///8A////AJZ/ExCTfROAkXsR4I55EP+Mdg7/iXUM/4dzC/+EcQv/gm8K/39sCf99awj/emgH/3hnBf92ZQf/c2MG/3FhBv9vYAb/bF4H/2pcCf9oWgn/ZlgJ/2NXCv9hVQr/X1MK/1xRDP9aTw3gWE4NgFZMDRD///8A////AP///wCZgRUwln8T4JN9E/+RexH/jnkQ/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/f2wJ/31rCP96aAf/eGcF/3ZlB/9zYwb/cWEG/29gBv9sXgf/alwJ/2haCf9mWAn/Y1cK/2FVCv9fUwr/XFEM/1pPDf9YTg3/VkwN4FRLDTD///8AnIMXEJmBFeCWfxP/k30T/5F7Ef+OeRD/jHYO/4l1DP+Hcwv/hHEL/4JvCv9/bAn/fWsI/3poB/94ZwX/dmUH/3NjBv9xYQb/b2AG/2xeB/9qXAn/aFoJ/2ZYCf9jVwr/YVUK/19TCv9cUQz/Wk8N/1hODf9WTA3/VEsN4FJJDhCcgxeAmYEV/5Z/E/+TfRP/kXsR/455EP+Mdg7/iXUM/4dzC/+EcQv/gm8K/39sCf99awj/emgH/3hnBf92ZQf/c2MG/3FhBv9vYAb/bF4H/2pcCf9oWgn/ZlgJ/2NXCv9hVQr/X1MK/1xRDP9aTw3/WE4N/1ZMDf9USw3/UkkOgJyDF+CZgRX/ln8T/5N9E/+RexH/jnkQ/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/m4tb/5mJWf+Xh1j/lIVW/5OEVv+Rglb/j4FU/41/U/+LfVL/iXxR/2haCf9mWAn/Y1cK/2FVCv9fUwr/XFEM/1pPDf9YTg3/VkwN/1RLDf9SSQ7gnIMX/5mBFf+WfxP/k30T/5F7Ef+OeRD/jHYO/4l1DP+Hcwv/n45d/52MW/+Nezj/r6OE/7+0n/++s57/s6iQ/7Knjv+6sJv/uK6a/6SZfv94ajD/h3pR/4V4T/9jVwr/YVUK/19TCv9cUQz/Wk8N/1hODf9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+TfRP/kXsR/455EP+Mdg7/j3sk/6GQXf+LeCT/xLii/8K3of+LeTb/emgH/3hnBf92ZQf/c2MG/3FhBv9vYAb/e2ww/7asmf+1q5n/bWAa/4N3Tv9oXBn/X1MK/1xRDP9aTw3/WE4N/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/5N9E/+RexH/jnkQ/5J9Jv+cikz/oZBd/9XMv/+QfTn/f2wJ/31rCP96aAf/eGcF/3ZlB/9zYwb/cWEG/29gBv9sXgf/alwJ/3dpLv/IwbX/g3dO/3hsP/9mWhf/XFEM/1pPDf9YTg3/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/k30T/5F7Ef+OeRD/pZNf/6mZbP/OxLL/hHEL/4JvCv9/bAn/fWsI/3poB/94ZwX/dmUH/3NjBv9xYQb/b2AG/2xeB/9qXAn/aFoJ/2ZYCf+8tKX/iX1c/39zTP9cUQz/Wk8N/1hODf9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+TfRP/kXsR/6iVX/+ei03/yLuj/4dzC/+EcQv/nYxb/5uLW/+LeTb/emgH/3hnBf92ZQf/c2MG/3FhBv9vYAb/bF4H/2pcCf9oWgn/ZlgJ/2NXCv+xp5X/dmo9/31yTP9aTw3/WE4N/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/5N9E/+diD//moY9/9DFs/+PeyT/h3ML/5+OXf/LwbD/opNo/9LKvP+BcB//eGcF/3ZlB/9zYwb/cWEG/29gBv9sXgf/alwJ/2haCf9mWAn/Y1cK/2hcGf+6sqP/bGEs/2pfK/9YTg3/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/k30T/6mXYf+unW//s6N9/4l1DP+Hcwv/n45d/7yvlf9/bAn/hHIg/8i+rf9/bh3/dmUH/3NjBv9xYQb/b2AG/2xeB/9qXAn/aFoJ/2ZYCf9jVwr/YVUK/5GHav+Ge1r/e3BL/1hODf9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+TfRP/qZdh/8q+pv+Mdg7/iXUM/4dzC/+LeCT/3dbL/9PKvf99awj/iXc3/9nTyP98bB3/c2MG/3FhBv9vYAb/bF4H/2pcCf9oWgn/ZlgJ/2NXCv9hVQr/X1MK/66llP97cEv/WE4N/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/6WRUf+XgSj/yr6m/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/08q9/8C1oP96aAf/jX1I/9nSyP96ahz/cWEG/29gBv9sXgf/alwJ/2haCf9mWAn/Y1cK/2FVCv9fUwr/rqWU/2JWGP9wZTv/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/rJhi/6OPT/+1pX7/jHYO/4l1DP+Hcwv/hHEL/4JvCv9/bAn/uKyT/7eqkf94ZwX/i3xI/83Guf/Duqr/uK6a/8rDt/+RhWH/aFoJ/2ZYCf9jVwr/YVUK/19TCv+Qhmn/cmY7/3lvSv9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+smGL/qZdh/6iVX/+Mdg7/iXUM/4dzC/+EcQv/gm8K/39sCf99awj/t6qR/8e+rf98bB3/c2MG/3FhBv9vYAb/bF4H/7+3p/+Pg2D/ZlgJ/2NXCv9hVQr/X1MK/31yTP97cEv/eW9K/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/6yYYv+pl2H/qJVf/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/f2wJ/31rCP96aAf/0Mi7/3xsHf9zYwb/cWEG/29gBv9sXgf/alwJ/9PNxf9mWAn/Y1cK/2FVCv9fUwr/fXJM/3twS/95b0r/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/rJhi/6OPT/+1pX7/jHYO/4l1DP+Hcwv/hHEL/4JvCv9/bAn/fWsI/3poB//Hvq3/dmUH/3NjBv9xYQb/fm8x/3RlGf9qXAn/q6GK/31wQf9jVwr/YVUK/19TCv+Qhmn/cmY7/3lvSv9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+lkVH/l4Eo/8q+pv+Mdg7/iXUM/4dzC/+EcQv/gm8K/39sCf99awj/emgH/76znv92ZQf/c2MG/4BwMv/X0Mf/wbio/3FjG/+roYr/hXhP/2NXCv9hVQr/X1MK/66llP9iVhj/cGU7/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/5N9E/+pl2H/yr6m/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/f2wJ/31rCP96aAf/0Mi7/3ZlB/9zYwb/iHhF/+Hc1f/BuKj/gXND/9PNxf9mWAn/Y1cK/2FVCv9fUwr/rqWU/3twS/9YTg3/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/k30T/6mXYf+unW//s6N9/4l1DP+Hcwv/hHEL/4JvCv9/bAn/fWsI/3poB/+bjWX/xbys/3NjBv9xYQb/jX9T/3RlGf+jmH3/q6GK/2ZYCf9jVwr/YVUK/5GHav+Ge1r/e3BL/1hODf9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+TfRP/nYg//5qGPf/QxbP/j3sk/4dzC/+EcQv/gm8K/39sCf99awj/emgH/3hnBf+ilXT/zca5/7Gmjv+vpYz/ysO3/6yii/9oWgn/ZlgJ/2NXCv9oXBn/urKj/2xhLP9qXyv/WE4N/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/5N9E/+RexH/qJVf/56LTf/Iu6P/h3ML/4RxC/+Cbwr/f2wJ/31rCP96aAf/eGcF/3ZlB/9zYwb/j4FU/41/U/9sXgf/alwJ/2haCf9mWAn/Y1cK/7Gnlf92aj3/fXJM/1pPDf9YTg3/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/k30T/5F7Ef+OeRD/pZNf/6mZbP/OxLL/hHEL/4JvCv9/bAn/fWsI/3poB/94ZwX/dmUH/3NjBv9xYQb/b2AG/2xeB/9qXAn/aFoJ/2ZYCf+8tKX/iX1c/39zTP9cUQz/Wk8N/1hODf9WTA3/VEsN/1JJDv+cgxf/mYEV/5Z/E/+TfRP/kXsR/455EP+SfSb/nIpM/6GQXf/VzL//kH05/39sCf99awj/emgH/3hnBf92ZQf/c2MG/3FhBv9vYAb/bF4H/2pcCf93aS7/yMG1/4N3Tv94bD//ZloX/1xRDP9aTw3/WE4N/1ZMDf9USw3/UkkO/5yDF/+ZgRX/ln8T/5N9E/+RexH/jnkQ/4x2Dv+PeyT/oZBd/4t4JP/EuKL/wreh/4t5Nv96aAf/eGcF/3ZlB/9zYwb/cWEG/29gBv97bDD/tqyZ/7Wrmf9tYBr/g3dO/2hcGf9fUwr/XFEM/1pPDf9YTg3/VkwN/1RLDf9SSQ7/nIMX/5mBFf+WfxP/k30T/5F7Ef+OeRD/jHYO/4l1DP+Hcwv/n45d/52MW/+Nezj/r6OE/7+0n/++s57/s6iQ/7Knjv+6sJv/uK6a/6SZfv94ajD/h3pR/4V4T/9jVwr/YVUK/19TCv9cUQz/Wk8N/1hODf9WTA3/VEsN/1JJDv+cgxfgmYEV/5Z/E/+TfRP/kXsR/455EP+Mdg7/iXUM/4dzC/+EcQv/gm8K/5uLW/+ZiVn/l4dY/5SFVv+ThFb/kYJW/4+BVP+Nf1P/i31S/4l8Uf9oWgn/ZlgJ/2NXCv9hVQr/X1MK/1xRDP9aTw3/WE4N/1ZMDf9USw3/UkkO4JyDF4CZgRX/ln8T/5N9E/+RexH/jnkQ/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/f2wJ/31rCP96aAf/eGcF/3ZlB/9zYwb/cWEG/29gBv9sXgf/alwJ/2haCf9mWAn/Y1cK/2FVCv9fUwr/XFEM/1pPDf9YTg3/VkwN/1RLDf9SSQ6AnIMXEJmBFeCWfxP/k30T/5F7Ef+OeRD/jHYO/4l1DP+Hcwv/hHEL/4JvCv9/bAn/fWsI/3poB/94ZwX/dmUH/3NjBv9xYQb/b2AG/2xeB/9qXAn/aFoJ/2ZYCf9jVwr/YVUK/19TCv9cUQz/Wk8N/1hODf9WTA3/VEsN4FJJDhD///8AmYEVMJZ/E+CTfRP/kXsR/455EP+Mdg7/iXUM/4dzC/+EcQv/gm8K/39sCf99awj/emgH/3hnBf92ZQf/c2MG/3FhBv9vYAb/bF4H/2pcCf9oWgn/ZlgJ/2NXCv9hVQr/X1MK/1xRDP9aTw3/WE4N/1ZMDeBUSw0w////AP///wD///8Aln8TEJN9E4CRexHgjnkQ/4x2Dv+JdQz/h3ML/4RxC/+Cbwr/f2wJ/31rCP96aAf/eGcF/3ZlB/9zYwb/cWEG/29gBv9sXgf/alwJ/2haCf9mWAn/Y1cK/2FVCv9fUwr/XFEM/1pPDeBYTg2AVkwNEP///wD///8AwAAAA4AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAcAAAAM=" InformativeScreenshot="a0740dffb3c4e9290792413cd958df46.png" Reference="CLaili1VZUqs4TJjknIpbg/6EDDo2VvQUuCIKgS5RuqzQ" Selector="&lt;html app='firefox.exe' title='S-Gate Logout' /&gt;" Title="S-Gate Logout" Url="https://sgate.bmwgroup.com/logout.html?state=361fab21-e408-40a8-b735-7a273d717308" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

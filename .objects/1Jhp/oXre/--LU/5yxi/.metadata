@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Nav Item",
+  "Type": "Element",
+  "TaxonomyType": "Link",
+  "Id": "5yxi7h8-akOow0d7cvy6jw",
+  "Reference": "CLaili1VZUqs4TJjknIpbg/5yxi7h8-akOow0d7cvy6jw",
+  "ParentRef": "CLaili1VZUqs4TJjknIpbg/--LUlv_9REmETb0xdieFJw",
+  "Created": "2024-01-14T18:23:54.978988Z",
+  "Updated": "2024-01-14T18:27:00.6671443Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

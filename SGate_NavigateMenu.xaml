@@ -1,0 +1,152 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SGate_NavigateMenu" this:SGate_NavigateMenu.in_NavItem="Administration" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NavItem" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>1213.3333333333333,1224.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Navigates to the specified menu item and uses the in_PageName argument to verify that the page has loaded." sap:VirtualizedContainerService.HintSize="546,1160" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Firefox: S-Gate Dashboard" sap:VirtualizedContainerService.HintSize="484,1004" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="5417ba18-51ba-417b-b6c4-dba8834be60c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,784.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uast:FindAndReplace DisplayName="Find and Replace &amp; symbol with escaped code" sap:VirtualizedContainerService.HintSize="388,249.33333333333334" sap2010:WorkflowViewState.IdRef="FindAndReplace_1" MatchCase="False" ReplaceWith="&amp;amp;" Result="[in_NavItem]" Source="[in_NavItem]" ValueToFind="&amp;" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nav Item'" sap:VirtualizedContainerService.HintSize="388,197.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5417ba18-51ba-417b-b6c4-dba8834be60c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://sgate.bmwgroup.com/web/market_gb/home" ContentHash="s9of1b23Ikav3Mg_Vfj8Wg" CvTextArea="1426, 264, 123, 21" CvTextArgument="Administration" CvType="Text" DesignTimeRectangle="1393, 261, 195, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='A' /&gt;&quot;, in_NavItem)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='A' type='' class='' check:innerText='{0}' /&gt;&quot;, in_NavItem)]" Guid="22025594-1e73-4d88-8a38-842f68800385" InformativeScreenshot="5cb3a6eca201faa1da00248e08305afd.png" Reference="CLaili1VZUqs4TJjknIpbg/5yxi7h8-akOow0d7cvy6jw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='S-Gate Retailer Portal United Kingdom and Ireland' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Page Heading'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://sgate.bmwgroup.com/web/market_gb/home" ContentHash="eDBBlSB_oEaXjOQ4wCzyLQ" CvTextArea="376, 354, 327, 24" CvType="AnyWordGroup" DesignTimeRectangle="380, 341, 2486, 52" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='H1' type='' class='section-title-text' visibleinnertext='BUSINESS AREA {0}' /&gt;&quot;, in_NavItem)]" Guid="1018ae27-1341-4c9c-8ae9-62c6af627a58" ImageBase64="" InformativeScreenshot="5042c34034743b2f9159a63e0adca47b.png" Reference="CLaili1VZUqs4TJjknIpbg/EB6JrnEhiUmxZI-FN6M2qg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='S-Gate Retailer Portal United Kingdom and Ireland' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message - Successful Navigation" sap:VirtualizedContainerService.HintSize="388,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Navigated to &quot; + in_NavItem + &quot; page.&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Firefox" ContentHash="Qev7G7V9-0WHgC5Xjm1uDQ" IconBase64="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" InformativeScreenshot="b4b1652d4bfabffac613a82f13ab9186.png" Reference="CLaili1VZUqs4TJjknIpbg/--LUlv_9REmETb0xdieFJw" Selector="&lt;html app='firefox.exe' title='S-Gate Retailer Portal United Kingdom and Ireland' /&gt;" Title="S-Gate Retailer Portal United Kingdom and Ireland" Url="https://sgate.bmwgroup.com/web/market_gb/home" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

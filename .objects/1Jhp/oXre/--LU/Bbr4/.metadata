@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Application Search",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Bbr4KXqPjkW4g4ddb7myPA",
+  "Reference": "CLaili1VZUqs4TJjknIpbg/Bbr4KXqPjkW4g4ddb7myPA",
+  "ParentRef": "CLaili1VZUqs4TJjknIpbg/--LUlv_9REmETb0xdieFJw",
+  "Created": "2024-01-14T18:38:33.5059942Z",
+  "Updated": "2024-01-14T18:38:33.5059942Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
